@@ -1,12 +1,12 @@
-# raycast-onboard
+# lazy-raycast
 
-Raycast AI に、あなたの Raycast を育ててもらうための Skills 集。
+面倒だから任せちゃおう。Raycast の設定を Raycast AI にやってもらうための Skills 集。
 
 | Skill | こんなときに | やること |
 |-------|-------------|---------|
-| `raycast-onboard` | 「Raycast のオンボーディングして」 | ミッションを 1 つずつ出し、「できた」と言うと Raycast の状態を確認して次へ進むハンズオン |
-| `raycast-level` | 「私の Raycast は何レベル?」 | 実データから 7 観点で採点し、🥚 Lv1 〜 🐉 Lv6 の通信簿を出す(読むだけ) |
-| `raycast-growth` | 「Raycast を育てて」 | Hotkey・Alias・Snippets・Quicklinks・拡張・設定・AI モデル・Agent などを提案し、承認したものを実際に設定する |
+| `raycast-onboard` | 「Raycast のオンボーディングして」 | 普段の作業を聞いて Quicklink・Snippet・Hotkey・拡張を作り、「このように呼び出せます」と案内する |
+| `raycast-level` | 「私の Raycast は何レベル?」 | 実データから 7 観点で採点し、Lv1 〜 Lv6 を出す(読むだけ) |
+| `raycast-growth` | 「設定を良くして」 | Hotkey・Alias・Snippets・Quicklinks・拡張・設定・AI モデル・Agent などを提案し、承認したものを実際に設定する |
 | `raycast-tidy` | 「Raycast をスッキリさせたい」 | Quicklinks / Snippets / Hotkey / 拡張などを棚卸しし、重複・衝突を承認制で片づける |
 
 ## 必要なもの
@@ -17,10 +17,10 @@ Raycast AI に、あなたの Raycast を育ててもらうための Skills 集�
 ## インストール
 
 ```sh
-git clone https://github.com/n-seiji/raycast-onboard ~/raycast-onboard
+git clone https://github.com/n-seiji/lazy-raycast ~/lazy-raycast
 ```
 
-Raycast の **Settings → AI → Skills → Skill Folders** の「+」で `~/raycast-onboard/skills` を追加する。
+Raycast の **Settings → AI → Skills → Skill Folders** の「+」で `~/lazy-raycast/skills` を追加する。
 1 分ほどで 4 つの Skill が一覧に出る。
 
 > `~/.claude/skills` などに各 Skill のフォルダを置いても読み込まれる(Claude Code でもそのまま使える)。

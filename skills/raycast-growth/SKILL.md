@@ -1,24 +1,24 @@
 ---
 name: raycast-growth
-description: Use when the user wants to improve or level up their Raycast setup — "Raycast を育てて" / "設定を良くして" / "もっと便利にして" / "おすすめの設定をして" — including hotkeys, aliases, snippets, quicklinks, extensions, auto quit, Raycast settings, AI models, agents, and AI commands. Proposes concrete changes and applies the approved ones.
+description: Use when the user wants to improve or level up their Raycast setup — "設定を良くして" / "Raycast を育てて" / "もっと便利にして" / "おすすめの設定をして" — including hotkeys, aliases, snippets, quicklinks, extensions, auto quit, Raycast settings, AI models, agents, and AI commands. Proposes concrete changes and applies the approved ones.
 ---
 
-# Raycast Growth(育てる)
+# Raycast Growth(設定の提案・変更)
 
-いまの使い方に合わせて、Raycast の設定を **実際に変えて** 育てる。
+いまの使い方に合わせて、Raycast の設定を提案し、承認されたものを **実際に変える**。
 「提案 → 承認 → 適用 → 確認」を 1 セットずつ回す。
 
 ## 手順
 
-1. 何を育てたいか聞く。特に希望がなければ、下の「育てるメニュー」を上から順に診断して、
+1. 何を良くしたいか聞く。特に希望がなければ、下の「メニュー」を上から順に診断して、
    効果が大きそうなものを **最大 3 つ** 選ぶ(raycast-level の結果が会話にあれば、低い観点を優先)。
 2. 1 つずつ、**変更内容を具体的に** 見せる(何を・どの値に・なぜ)。
 3. 承認されたものだけ適用し、読み直して反映を確認してから「できたよ」と伝える。
 4. 最後に変えたものの一覧を出し、「もう一度 raycast-level でレベルを見る?」と聞く。
 
-## 育てるメニュー
+## メニュー
 
-| # | 育てるもの | 診断 | 適用 |
+| # | 対象 | 診断 | 適用 |
 |---|-----------|------|------|
 | 1 | **Hotkey** | raycast-settings__search-settings(hotkey)で既存のルール(Hyper + 頭文字など)と重複を把握。よく使うアプリは applications__search-applications と、シェルが使えれば `mdls -name kMDItemUseCount` で推定 | raycast-settings__update-setting。ルールに合わせ、空いている組み合わせだけ。素の ⌥ + 文字は避ける |
 | 2 | **Alias** | よく使いそうなコマンドで alias が空のもの | raycast-settings__update-setting(短い英字 2〜4 文字) |
