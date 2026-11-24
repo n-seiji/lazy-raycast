@@ -5,8 +5,8 @@
 | Skill | こんなときに | やること |
 |-------|-------------|---------|
 | `raycast-onboard` | 「Raycast のオンボーディングして」 | 普段の作業を聞いて Quicklink・Snippet・Hotkey・拡張を作り、「このように呼び出せます」と案内する |
-| `raycast-level` | 「私の Raycast は何レベル?」 | 実データから 7 観点で採点し、Lv1 〜 Lv6 を出す(読むだけ) |
-| `raycast-growth` | 「設定を良くして」 | Hotkey・Alias・Snippets・Quicklinks・拡張・設定・AI モデル・Agent などを提案し、承認したものを実際に設定する |
+| `raycast-level` | 「私の Raycast は何レベル?」 | 実データから 7 観点で採点し、4 段階(⌘ → ⌘⌥ → ⌘⌥⌃ → ⌘⌥⌃⇧ Hyper Key)で出す(読むだけ) |
+| `raycast-growth` | 「設定を良くして」 | Hotkey・Alias・Snippets・Quicklinks・拡張・設定・AI モデル・Agent などを提案し、承認したものを実際に設定する。最近のリリースから関係ありそうな新機能も拾う |
 | `raycast-tidy` | 「Raycast をスッキリさせたい」 | Quicklinks / Snippets / Hotkey / 拡張などを棚卸しし、重複・衝突を承認制で片づける |
 
 ## 必要なもの

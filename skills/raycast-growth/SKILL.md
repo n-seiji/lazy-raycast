@@ -1,6 +1,6 @@
 ---
 name: raycast-growth
-description: Use when the user wants to improve or level up their Raycast setup — "設定を良くして" / "Raycast を育てて" / "もっと便利にして" / "おすすめの設定をして" — including hotkeys, aliases, snippets, quicklinks, extensions, auto quit, Raycast settings, AI models, agents, and AI commands. Proposes concrete changes and applies the approved ones.
+description: Use when the user wants to improve or level up their Raycast setup — "設定を良くして" / "Raycast を育てて" / "もっと便利にして" / "おすすめの設定をして" — or wants to know what is new in Raycast ("最近のリリースを教えて" / "新機能ある?") — including hotkeys, aliases, snippets, quicklinks, extensions, auto quit, Raycast settings, AI models, agents, and AI commands. Proposes concrete changes and applies the approved ones.
 ---
 
 # Raycast Growth(設定の提案・変更)
@@ -29,6 +29,19 @@ description: Use when the user wants to improve or level up their Raycast setup 
 | 7 | **Raycast の設定** | raycast-settings__search-settings で既定のままの便利設定を探し、manual__search-manual-pages で意味を確認 | raycast-settings__update-setting |
 | 8 | **AI のモデル** | 「AI Chat Default Model」「AI Commands」の現在値と選べるモデル一覧 | raycast-settings__update-setting |
 | 9 | **Agent / AI Command** | 繰り返しの依頼や定型の文章作業 | 下の「ディープリンクで作る」 |
+| 10 | **最近のリリース** | 下の「最近のリリースをピックアップする」 | 関係する設定があれば raycast-settings__update-setting |
+
+## 最近のリリースをピックアップする
+
+「最近のリリースを教えて」「新機能ある?」と言われたとき、または診断の最後に 1 回だけ行う。
+
+1. Web Search で公式の changelog(https://www.raycast.com/changelog)から **直近 3 リリース** を読む。
+   記憶で書かない。読めなかったら「changelog を読めなかった」と伝えてこの手順をやめる。
+2. いまの設定(入っている拡張、Hotkey、Snippets / Quicklinks の数、使っている AI 機能)と照らして、
+   **この人に関係がありそうなものを最大 3 つ** 選ぶ。全部を並べない。
+3. 1 つずつ「何が変わったか(1 行)/ あなたの場合どう使えるか(1 行)/ 試し方(1 行)」で伝え、
+   バージョンと changelog の URL を添える。
+4. 設定を変えると使える機能なら、いつもの「提案 → 承認 → 適用 → 確認」に進む。
 
 ## ディープリンクで作る(Agent / AI Command)
 

@@ -1,17 +1,17 @@
 ---
 name: raycast-level
-description: Use when the user wants to check how well they use Raycast — a Raycast level check, レベル診断, 使いこなし度, "私の Raycast は何レベル?". Reads only; scores the setup on 7 points and returns Lv1 to Lv6. For actually improving the setup, use raycast-growth.
+description: Use when the user wants to check how well they use Raycast — a Raycast level check, レベル診断, 使いこなし度, "私の Raycast は何レベル?". Reads only; scores the setup on 7 points and returns one of 4 stages shown as modifier keys (⌘ up to ⌘⌥⌃⇧ Hyper Key). For actually improving the setup, use raycast-growth.
 ---
 
 # Raycast Level(レベル診断)
 
-いまの Raycast をどれくらい使いこなしているかを、実データから 7 観点で採点し、Lv1〜Lv6 を出す。
+いまの Raycast をどれくらい使いこなしているかを、実データから 7 観点で採点し、4 段階(⌘ → ⌘⌥ → ⌘⌥⌃ → ⌘⌥⌃⇧ Hyper Key)で出す。
 **読むだけで、何も変更しない**。改善したくなったら raycast-growth へ案内する。
 
 ## 手順
 
 1. 「いまの Raycast を読ませてもらうね(読むだけ)」と 1 行伝えてから、下の観点のデータを読み取りツールで集める。
-2. 観点ごとに 0〜3 のスコアをつけ、合計からレベルと称号を出す。
+2. 観点ごとに 0〜3 のスコアをつけ、合計から段階を出す。
 3. 結果を出す(フォーマットは下)。
 4. いちばん低い観点を 1 つ挙げ、「raycast-growth で改善する?」と聞く。
 5. 「Raycast Notes に保存する?」と聞き、承認されたら raycast-notes__create-note で保存する
@@ -33,27 +33,29 @@ description: Use when the user wants to check how well they use Raycast — a Ra
 - **Raycast コマンドの使用回数は取得できない**。年間の使用回数は Raycast Wrapped で見られると添える。
 - 既存の Hotkey を読んだら、**付け方のルール**(Hyper + 頭文字など)と **重複** があれば結果のひとことに入れる。
 
-## レベルと称号(合計 0〜21)
+## 4 つの段階(合計 0〜21)
 
-| 合計 | Lv | 称号 |
-|------|----|------|
-| 0〜3 | 1 | 🥚 たまご |
-| 4〜7 | 2 | 🐣 ひよこ |
-| 8〜11 | 3 | 🐥 こども |
-| 12〜15 | 4 | 🐓 おとな |
-| 16〜18 | 5 | 🦅 たか |
-| 19〜21 | 6 | 🐉 りゅう |
+修飾キーが 1 つずつ増えていく 4 段階。4 つ全部そろうと Raycast の **Hyper Key**(⌘⌥⌃⇧)になる。
+優劣ではなく「いまキーがいくつ光っているか」として伝える。
+
+| 合計 | 段階 | 表示 |
+|------|------|------|
+| 0〜5 | Lv1 | ⌘ |
+| 6〜10 | Lv2 | ⌘⌥ |
+| 11〜15 | Lv3 | ⌘⌥⌃ |
+| 16〜21 | Lv4 | ⌘⌥⌃⇧ Hyper Key |
 
 ## 結果のフォーマット
 
 ```
-## 🐥 Lv3 こども(12 / 21)
+## Lv3 ⌘⌥⌃(12 / 21)
 
 ⌨️ 呼び出し     ■■□  Hotkey 6 個
 📋 クリップボード ■■■  よく再利用してる
 ...
 
 ひとこと: <使い方の特徴を 1〜2 文で。推測は推測と書く>
+次の ⇧ まで: あと 4 点(そろうと Hyper Key)
 いちばん伸びしろ: <観点> → 「設定を良くして」と言えば raycast-growth で改善できます
 ```
 
